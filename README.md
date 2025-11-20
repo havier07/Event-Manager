@@ -50,7 +50,7 @@ Có thể tải, giải nén và khởi chạy trực tiếp file `EventManager.
 * Python 3.8 trở lên.
 
 ### Bước 1: Cài đặt thư viện
-Mở terminal/command prompt và chạy lệnh sau để cài đặt `PySide6`:
+Mở terminal/command prompt và chạy lệnh sau để cài đặt `PySide6` và chương trình:
 
 ```bash
 pip install PySide6
