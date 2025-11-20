@@ -42,6 +42,10 @@ Giao diện được thiết kế hiện đại, sử dụng tông màu đỏ ch
 
 ## 🛠️ Cài Đặt & Chạy Ứng Dụng
 
+# Cách 1:
+Có thể tải, giải nén và khởi chạy trực tiếp file `EventManager.exe` tại [đây](https://drive.google.com/drive/folders/1V9vb3JM3ksyquWqbaOrOCAanGORHlhA3?hl=vi)
+
+# Cách 2:
 ### Yêu cầu hệ thống
 * Python 3.8 trở lên.
 
@@ -50,25 +54,38 @@ Mở terminal/command prompt và chạy lệnh sau để cài đặt `PySide6`:
 
 ```bash
 pip install PySide6
-Bước 2: Chuẩn bị tài nguyên
-Đảm bảo bạn có file logo (tùy chọn) đặt cùng thư mục với file code:
 
-logo_ptit.png: Ảnh logo trường (nếu không có, ứng dụng sẽ tự tạo placeholder).
+git clone https://github.com/havier07/Event-Manager.git
 
-Bước 3: Chạy ứng dụng
-Bash
+cd Event-Manager
 
 python main.py
-📂 Cấu Trúc Dự Án
-Plaintext
+```
 
+### Bước 2: Chuẩn bị tài nguyên
+
+Đảm bảo bạn có file logo (tùy chọn) đặt cùng thư mục với file code:
+
+Logo_PTIT.png: Ảnh logo trường (nếu không có, ứng dụng sẽ tự tạo placeholder).
+
+### Bước 3: Chạy ứng dụng
+
+```bash
+python main.py
+```
+
+## 📂 Cấu Trúc Dự Án
+
+```Plaintext
 Event-Manager/
 │
 ├── main.py                # Mã nguồn chính của chương trình
 ├── event_app_data.json    # Cơ sở dữ liệu (Tự động tạo khi chạy lần đầu)
-├── logo_ptit.png          # Logo hiển thị trên giao diện (Cần thêm vào)
+├── Logo_PTIT.png          # Logo hiển thị trên giao diện (Cần thêm vào)
 └── README.md              # Tài liệu hướng dẫn
-⚙️ Công Nghệ Sử Dụng
+```
+
+## ⚙️ Công Nghệ Sử Dụng
 Ngôn ngữ: Python.
 
 Framework GUI: PySide6 (Qt for Python).
@@ -76,10 +93,3 @@ Framework GUI: PySide6 (Qt for Python).
 Database: JSON (Lưu trữ cục bộ đơn giản, không cần cài đặt SQL).
 
 Libraries: sys, os, json, re, datetime.
-
-📝 Ghi Chú
-Dữ liệu được lưu trong file event_app_data.json. Nếu muốn reset dữ liệu, chỉ cần xóa file này và chạy lại chương trình.
-
-Mật khẩu yêu cầu: 8-24 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt.
-
-Developed for PTIT Students.
